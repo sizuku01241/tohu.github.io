@@ -1,0 +1,264 @@
+<html>
+
+<head>
+    <title>Tohu wiki</title>
+    <link rel="icon" href="image/icon.png" type="image/png">
+</head>
+<div class="image-container">
+    <div class="background"></div> <!-- 背景専用 -->
+    <div class="overlay">
+        <h1 class="title-text">　Tohu<br>　　Battle<br>　　　Wiki　</h1>
+    </div>
+</div>
+
+
+
+<body>
+    <div class="about">
+        <br>
+        <h2 class="about_title">About</h2>
+        <br>
+        <p class="about_message">このサイトは、Minecraftで開催されている「<span
+                style="color:darkorange;">とーふバトルロワイヤル</span>」の<strong>公式Wiki</strong>です。<br>
+            <span style="color:teal;">独自アイテム</span>を使った少人数制の対戦を中心に、2〜8人で楽しめる内容になっています。<br>
+            <span style="color:rgb(118, 221, 255);">アイテム情報</span>、<span
+                style="color:rgb(118, 221, 255);">アップデート方法</span>、<span
+                style="color:rgb(118, 221, 255);">アドオン配布</span>、<span
+                style="color:rgb(118, 221, 255);">ステージ紹介</span>、<span
+                style="color:rgb(118, 221, 255);">更新履歴</span>などを掲載しています。<br>
+            管理者である雫が運営していますが、<span style="color:red;">このバトルロワイヤルは「あなたたちが作る」もの</span>です。<br>
+            <span style="color:green;">アイデアや提案</span>は、ぜひ下のフォームからお寄せください。<br><br>
+            <button class="form" id="btn"> SEND </button>
+        </p>
+        <!-- From Uiverse.io by cssbuttons-io -->
+        
+    </div>
+    <div class="stage">
+        <h2 class="sub_title">ステージ</h2>
+    </div>
+    <div class="item">
+        <h2 class="sub_title">アイテム</h2>
+
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <p style="font-size: 10px;">Copyright © 2025 Tohu Battle Wiki All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+</html>
+
+
+<css>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: animationZoom1 10s ease-in-out forwards;
+            z-index: 0;
+        }
+
+        .about {
+            background-color: #303030;
+            width: 100%;
+            height: 55%;
+        }
+
+        .about_message {
+            font-size: 20px;
+            padding-top: 10px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .about_title {
+            font-size: 50px;
+            color: white;
+            font-family: 'Sawarabi Mincho', sans-serif;
+            background-color: #963c3cfa;
+            border-radius: 50px;
+            width: fit-content;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: 0 auto;
+        }
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            /* 左寄せ */
+            align-items: flex-end;
+            /* 下寄せ */
+            padding: 40px;
+            /* 左下に余白 */
+            z-index: 1;
+        }
+
+        @keyframes animationZoom1 {
+            0% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1.0);
+            }
+        }
+
+        .title-text {
+            font-size: 90px;
+            color: white;
+            text-align: left;
+            font-family: 'Sawarabi Mincho', sans-serif;
+            -webkit-text-stroke-width: 0.1px;
+            -webkit-text-stroke-color: black;
+            background-image:
+                linear-gradient(90deg, rgba(0, 0, 0, 0.1) 50%, transparent 50%),
+                linear-gradient(rgba(61, 61, 61, 0.2) 50%, transparent 50%);
+            background-size: 20px 20px;
+        }
+
+        .sub_title {
+            font-size: 30px;
+        }
+
+        .sub_title {
+            position: relative;
+            font-size: 26px;
+            text-align: center;
+            border-bottom: 5px solid #dddddd;
+        }
+
+        .sub_title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 5px;
+            background-color: #387ccc;
+        }
+
+        /* From Uiverse.io by cssbuttons-io */
+        /* From Uiverse.io by portseif */ 
+/* From Uiverse.io by zjssun */ 
+.form {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+    </style>
+
+
+</css>
+
+<script>
+    function changeImage() {
+        const background = document.querySelector('.background');
+        const images = [
+            'image/home.png',
+            'image/home2.png',
+            'image/home4.png',
+            'image/home5.png',
+            'image/home6.png',
+            'image/home7.png',
+            'image/home8.png',
+            'image/home9.png',
+            'image/home10.png',
+            'image/home11.png',
+            'image/home13.png',
+            'image/home16.png',
+            'image/home17.png',
+            'image/home18.png',
+            'image/home19.png',
+            'image/home20.png',
+            'image/home21.png',
+            'image/home22.png',
+            'image/home23.png',
+            'image/home25.png',
+            'image/home26.png',
+            'image/home27.png',
+            'image/home28.png',
+            'image/home29.png',
+            'image/home30.png',
+        ];
+        let currentIndex = 0;
+
+        setInterval(() => {
+            let nextIndex;
+            do {
+                nextIndex = Math.floor(Math.random() * images.length);
+            } while (nextIndex === currentIndex);
+            currentIndex = nextIndex;
+
+            background.style.animation = 'none';
+            background.offsetHeight; // リセット適用
+            background.style.backgroundImage = `url('${images[currentIndex]}')`;
+            background.style.animation = 'animationZoom1 10s ease-in-out forwards';
+        }, 9900);
+    }
+
+    window.onload = () => {
+        const background = document.querySelector('.background');
+        background.style.backgroundImage = "url('image/home.png')";
+        changeImage();
+    };
+
+
+</script>
